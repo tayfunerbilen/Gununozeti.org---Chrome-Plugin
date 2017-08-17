@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var date = getToday(),
         request = new XMLHttpRequest();
 
-    request.open('GET', 'https://gununozeti.org/api?date=2017-08-17&format=json', true);
+    request.open('GET', 'https://gununozeti.org/api?date=' + date + '&format=json', true);
 
     request.onload = function () {
         if (request.status >= 200 && request.status < 400) {
